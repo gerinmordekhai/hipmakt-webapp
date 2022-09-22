@@ -27,7 +27,10 @@
                     <td><?= $row->email; ?></td>
                     <td><?= $row->region; ?></td>
                     <td><?= $row->tahunmasuk; ?></td>
-                    <td><button>UPDATE</button></td>
+                    <td>
+                        <button id="myBtn4">UPDATE</button>
+                        <button id="myBtn5">DELETE</button>
+                    </td>
                 </tr>
             <?php
             }

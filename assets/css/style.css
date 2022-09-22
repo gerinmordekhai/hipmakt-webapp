@@ -328,12 +328,27 @@ table th {
 	}
 }
 
-.tabel button {
+.tabel #myBtn4 {
 	background-color: #20ce65;
 	border: none;
 	border-radius: 4px;
 	color: #fff;
 	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	font-family: "Poppins";
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.tabel #myBtn5 {
+	background-color: #d31a38;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	padding: 8px 14px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
