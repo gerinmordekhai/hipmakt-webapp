@@ -23,7 +23,7 @@
           <ul>
             <li><a href="<?= base_url(''); ?>">Home</a></li>
             <li><a id="myBtn" href="#">Registrasi</a></li>
-            <li><a href="<?= site_url('v_daftarhipma'); ?>">Daftar HIPMA</a></li> 
+            <li><a href="<?= site_url('daftarhipma'); ?>">Daftar HIPMA</a></li> 
           </ul>
         </div>
     </div>

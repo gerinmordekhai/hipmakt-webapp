@@ -19,12 +19,24 @@ class Daftarhipma extends CI_Controller{
         $this->load->view('templates/v_footer');
     }
 
-    public function tambah_data(){
+    public function tambah_data()
+    {
         $tambah_hipma = $this->M_datahipma;
 
         $tambah_hipma->simpan_data();
 
         redirect('home');
     }
+
+    /*
+    public function update_data($id = null)
+    {
+        $update_hipma = $this->M_datahipma;
+
+        $update_hipma->update_data($id);
+
+        redirect("home");
+    }
+    */
 }
 ?>

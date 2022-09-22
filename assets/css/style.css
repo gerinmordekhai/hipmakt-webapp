@@ -327,3 +327,18 @@ table th {
 		border-bottom: 0;
 	}
 }
+
+.tabel button {
+	background-color: #20ce65;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	font-family: "Poppins";
+	font-weight: 600;
+	cursor: pointer;
+}

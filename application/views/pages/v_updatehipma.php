@@ -12,7 +12,6 @@
             <th scope="col">Email</th>
             <th scope="col">Region</th>
             <th scope="col">Tahun Masuk</th>
-            <th scope="col">Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -27,7 +26,6 @@
                     <td><?= $row->email; ?></td>
                     <td><?= $row->region; ?></td>
                     <td><?= $row->tahunmasuk; ?></td>
-                    <td><button>UPDATE</button></td>
                 </tr>
             <?php
             }

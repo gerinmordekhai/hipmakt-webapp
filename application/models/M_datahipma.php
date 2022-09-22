@@ -21,5 +21,21 @@ class M_datahipma extends CI_Model{
 
         $this->db->insert($this->table, $data);
     }
+/*
+    public function update_data($id)
+    {
+        $data = array(
+            'nama' => $this->input->post('nama'),
+            'status' => $this->input->post('status'),
+            'pt' => $this->input->post('pt'),
+            'jurusan' => $this->input->post('jurusan'),
+            'email' => $this->input->post('email'),
+            'region' => $this->input->post('region'),
+            'tahunmasuk' => $this->input->post('tahunmasuk')
+        );
+
+        return $this->db->where('id', $id)->update($this->table, $data);
+    }
+    */
 }
 ?>
