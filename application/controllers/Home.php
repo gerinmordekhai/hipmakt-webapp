@@ -5,15 +5,10 @@ class Home extends CI_Controller {
     {
         $data['judul'] = "- Home";
         
-        $this->load->view('templates/header', $data);
-        $this->load->view('home/index');
-        $this->load->view('pages/modalregis');
-        $this->load->view('templates/footer');
-    }
-
-    public function registrasi()
-    {
-        
+        $this->load->view('templates/v_header', $data);
+        $this->load->view('home/v_index');
+        $this->load->view('pages/v_modalregis');
+        $this->load->view('templates/v_footer');
     }
 }
 ?>
