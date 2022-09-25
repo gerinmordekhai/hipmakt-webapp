@@ -5,6 +5,7 @@
         <h1>kutai timur</h1>
         <thead>
             <tr>
+            <th scope="col">No</th>
             <th scope="col">Nama</th>
             <th scope="col">Status</th>
             <th scope="col">PT</th>
@@ -17,18 +18,21 @@
         </thead>
         <tbody>
             <?php 
+            $no = 1;
+
             foreach($listhipma as $row){
                 ?>
                 <tr>
+                    <td><?= $no++; ?></td>
                     <td><?= $row->nama; ?></td>
                     <td><?= $row->status; ?></td>
                     <td><?= $row->pt; ?></td>
                     <td><?= $row->jurusan; ?></td>
-                    <td><?= $row->email; ?></td>
+                    <td><a class="email" href="<?= $row->email; ?>">View</a></td>
                     <td><?= $row->region; ?></td>
                     <td><?= $row->tahunmasuk; ?></td>
                     <td>
-                        <button id="myBtn4">UPDATE</button>
+                        <a href="<?= base_url('daftarhipma/edit_data/'.$row->id); ?>"><button id="myBtn4">EDIT</button></a>
                         <button id="myBtn5">DELETE</button>
                     </td>
                 </tr>

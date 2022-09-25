@@ -328,12 +328,22 @@ table th {
 	}
 }
 
+.tabel .email {
+	text-decoration: none;
+	color: #20ce65;
+}
+
+.tabel .email:hover {
+	color: #19486e;
+	transition: all 0.3s ease-in-out;
+}
+
 .tabel #myBtn4 {
 	background-color: #20ce65;
 	border: none;
 	border-radius: 4px;
 	color: #fff;
-	padding: 8px 12px;
+	padding: 8px 22px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -353,6 +363,84 @@ table th {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 10px;
+	font-family: "Poppins";
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.container {
+	margin: 0%;
+}
+
+.form-update {
+}
+
+.form-content {
+	margin: 100px 300px;
+	background-color: #0f161c;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.65);
+	-webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.65);
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.header .text-form {
+	color: #fff;
+	font-weight: 700;
+	font-size: 45px;
+}
+
+.header .text-edit {
+	color: #20ce65;
+	font-weight: 700;
+	font-size: 45px;
+}
+
+.field-form {
+}
+
+.field-kiri {
+	float: left;
+	width: 100%;
+}
+
+.field-kanan{
+	float: left;
+}
+
+.form-update label {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.form-content input[type="text"],
+select {
+	width: 100%;
+	padding: 12px 50px;
+	margin: 3% 0%;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.form-content button {
+	margin-top: 10%;
+	width: 100%;
+	background-color: #20ce65;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
 	font-family: "Poppins";
 	font-weight: 600;
 	cursor: pointer;

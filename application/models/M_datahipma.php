@@ -2,6 +2,11 @@
 class M_datahipma extends CI_Model{
     private $table = "tb_listpelma";
 
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     public function getData()
     { 
         return $this->db->get($this->table)->result();
@@ -21,7 +26,13 @@ class M_datahipma extends CI_Model{
 
         $this->db->insert($this->table, $data);
     }
-/*
+
+    public function get_id($id)
+    {
+        $query = $this->db->get_where($this->table, array('id' => $id));
+        return $query->row();
+    }
+
     public function update_data($id)
     {
         $data = array(
@@ -33,9 +44,9 @@ class M_datahipma extends CI_Model{
             'region' => $this->input->post('region'),
             'tahunmasuk' => $this->input->post('tahunmasuk')
         );
-
-        return $this->db->where('id', $id)->update($this->table, $data);
+        
+        $this->db->where('id', $id);
+        return $this->db->update($this->table, $data);
     }
-    */
 }
 ?>

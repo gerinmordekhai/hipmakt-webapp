@@ -1,11 +1,11 @@
 <!-- Modal Registrasi-->
-<div id="myModal" class="modal">
+<div id="modalRegis" class="modal">
 
 <!-- Modal content -->
 <div class="modal-content">
   <span class="close">&times;</span>
   <h1>REGISTRASI</h1>
-  <form method="post" action="<?= base_url('daftarhipma/tambah_data'); ?>">
+  <form method="POST" action="<?= base_url('daftarhipma/tambah_data'); ?>">
     <label for="nama">Nama</label><br>
     <input type="text" id="nama" name="nama" placeholder="Nama Lengkap.."><br>
     
