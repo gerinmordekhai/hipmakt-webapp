@@ -33,7 +33,7 @@
                     <td><?= $row->tahunmasuk; ?></td>
                     <td>
                         <a href="<?= base_url('daftarhipma/edit_data/'.$row->id); ?>"><button id="myBtn4">EDIT</button></a>
-                        <button id="myBtn5">DELETE</button>
+                        <a href="<?= base_url('daftarhipma/hapus_data/'.$row->id); ?>"><button id="myBtn5">DELETE</button></a>
                     </td>
                 </tr>
             <?php

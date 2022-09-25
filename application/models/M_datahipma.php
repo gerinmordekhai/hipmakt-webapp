@@ -48,5 +48,11 @@ class M_datahipma extends CI_Model{
         $this->db->where('id', $id);
         return $this->db->update($this->table, $data);
     }
+
+    public function delete_data($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->delete($this->table);
+    }
 }
 ?>

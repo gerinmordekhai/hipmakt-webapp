@@ -41,5 +41,11 @@ class Daftarhipma extends CI_Controller{
         }
     }
     
+    public function hapus_data($id)
+    {
+        $this->M_datahipma->delete_data($id);
+
+        redirect('daftarhipma');
+    }
 }
 ?>
