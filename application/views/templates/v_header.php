@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script defer src="<?= base_url('assets/js/all.js') ?>"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <div class="navbar">
@@ -24,7 +25,7 @@
         <div class="navbar-kanan">
           <ul>
             <li><a href="<?= base_url(''); ?>">Home</a></li>
-            <li><a id="myBtn" href="#">Registrasi</a></li>
+            <li><a href="<?= site_url('registrasi'); ?>">Registrasi</a></li>
             <li><a href="<?= site_url('daftarhipma'); ?>">Daftar HIPMA</a></li> 
           </ul>
         </div>

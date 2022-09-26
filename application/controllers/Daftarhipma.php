@@ -5,6 +5,7 @@ class Daftarhipma extends CI_Controller{
         parent::__construct();
         $this->load->model('M_datahipma');
         $this->load->helper('url'); 
+        $this->load->library('session', 'form_validation');
     }
 
     public function list()
@@ -20,32 +21,15 @@ class Daftarhipma extends CI_Controller{
 
     public function tambah_data()
     {
-        $this->M_datahipma->simpan_data();
+        $this->form_validation->set_rules($this->M_datahipma->rules());
 
+        if($this->form_validation->run()){
+            $this->M_datahipma->simpan_data();
+        }
+        
         redirect('home');
     }
 
-    public function edit_data($id = null)
-    {
-        if($_POST == NULL){
-            $data_hipma['hipma'] = $this->M_datahipma->get_id($id);
-            $data['judul'] = "- Edit Hipma";
-
-            $this->load->view('templates/v_header', $data);
-            $this->load->view('pages/v_formupdate', $data_hipma);
-            $this->load->view('templates/v_footer');
-        }else{
-            $this->M_datahipma->update_data($id);
-
-            redirect('daftarhipma');
-        }
-    }
     
-    public function hapus_data($id)
-    {
-        $this->M_datahipma->delete_data($id);
-
-        redirect('daftarhipma');
-    }
 }
 ?>

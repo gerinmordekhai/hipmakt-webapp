@@ -53,4 +53,6 @@ $route['default_controller'] = 'home/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['registrasi'] = 'home/registrasi';
 $route['daftarhipma'] = 'daftarhipma/list';
+$route['dashboard'] = 'admin/data_hipma';

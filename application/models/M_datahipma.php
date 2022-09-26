@@ -7,6 +7,39 @@ class M_datahipma extends CI_Model{
         parent::__construct();
     }
 
+    public function rules()
+    {
+        return [
+            ['field' => 'nama',
+            'label' => 'Nama',
+            'rules' => 'required'],
+
+            ['field' => 'status',
+            'label' => 'Status',
+            'rules' => 'required'],
+            
+            ['field' => 'pt',
+            'label' => 'PT',
+            'rules' => 'required'],
+
+            ['field' => 'jurusan',
+            'label' => 'Jurusan',
+            'rules' => 'required'],
+
+            ['field' => 'email',
+            'label' => 'Email',
+            'rules' => 'required'],
+
+            ['field' => 'region',
+            'label' => 'Region',
+            'rules' => 'required'],
+
+            ['field' => 'tahunmasuk',
+            'label' => 'Tahun Masuk',
+            'rules' => 'required']
+        ];
+    }
+
     public function getData()
     { 
         return $this->db->get($this->table)->result();
