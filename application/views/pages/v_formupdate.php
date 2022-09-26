@@ -6,13 +6,13 @@
         </div>
         <div class="form-content">
             <div class="field-label">
-                <div class="label"><label for="nama">Nama</label><br></div>
-                <div class="label"><label for="status">Status</label><br></div>
-                <div class="label"><label for="pt">PT</label><br></div>
-                <div class="label"><label for="jurusan">Jurusan</label><br></div>
-                <div class="label"><label for="email">Email</label><br></div>
-                <div class="label"><label for="region">Region</label><br></div>
-                <div class="label"><label for="tahunmasuk">Tahun Masuk</label><br></div>
+                <div class="label-1"><label for="nama">Nama</label><br></div>
+                <div class="label-2"><label for="status">Status</label><br></div>
+                <div class="label-3"><label for="pt">PT</label><br></div>
+                <div class="label-4"><label for="jurusan">Jurusan</label><br></div>
+                <div class="label-5"><label for="email">Email</label><br></div>
+                <div class="label-6"><label for="region">Region</label><br></div>
+                <div class="label-7"><label for="tahunmasuk">Tahun Masuk</label><br></div>
             </div>
 
             <div class="field-form">
