@@ -28,7 +28,7 @@
                     <td><?= $row->status; ?></td>
                     <td><?= $row->pt; ?></td>
                     <td><?= $row->jurusan; ?></td>
-                    <td><a class="email" href="<?= $row->email; ?>">View</a></td>
+                    <td><a id="email" class="email" href="#">View</a></td>
                     <td><?= $row->region; ?></td>
                     <td><?= $row->tahunmasuk; ?></td>
                     <td>

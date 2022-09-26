@@ -343,7 +343,7 @@ table th {
 	border: none;
 	border-radius: 4px;
 	color: #fff;
-	padding: 8px 22px;
+	padding: 5px 17px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -358,7 +358,7 @@ table th {
 	border: none;
 	border-radius: 4px;
 	color: #fff;
-	padding: 8px 14px;
+	padding: 5px 9px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -373,9 +373,6 @@ table th {
 }
 
 .form-update {
-}
-
-.form-content {
 	margin: 100px 300px;
 	background-color: #0f161c;
 	border-radius: 8px;
@@ -402,28 +399,28 @@ table th {
 	font-size: 45px;
 }
 
-.field-form {
+.form-content {
+	display: flex;
+	padding: 3% 5%;
 }
 
-.field-kiri {
-	float: left;
-	width: 100%;
-}
-
-.field-kanan{
-	float: left;
-}
-
-.form-update label {
+.field-label .label {
 	font-size: 20px;
 	font-weight: 500;
+	margin: 22% 0%;
+}
+
+.field-form {
+	width: 80%;
+	margin-left: auto;
+	margin-right: 0;
 }
 
 .form-content input[type="text"],
 select {
 	width: 100%;
 	padding: 12px 50px;
-	margin: 3% 0%;
+	margin: 1% 0%;
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -431,7 +428,7 @@ select {
 }
 
 .form-content button {
-	margin-top: 10%;
+	margin-top: 5%;
 	width: 100%;
 	background-color: #20ce65;
 	border: none;

@@ -1,23 +1,23 @@
 <div class="container">
     <div class="form-update">
+        <div class="header">
+            <span class="text-form">FORM</span>
+            <span class="text-edit">EDIT</span>
+        </div>
         <div class="form-content">
-            <div class="header">
-                <span class="text-form">FORM</span>
-                <span class="text-edit">EDIT</span>
+            <div class="field-label">
+                <div class="label"><label for="nama">Nama</label><br></div>
+                <div class="label"><label for="status">Status</label><br></div>
+                <div class="label"><label for="pt">PT</label><br></div>
+                <div class="label"><label for="jurusan">Jurusan</label><br></div>
+                <div class="label"><label for="email">Email</label><br></div>
+                <div class="label"><label for="region">Region</label><br></div>
+                <div class="label"><label for="tahunmasuk">Tahun Masuk</label><br></div>
             </div>
 
             <div class="field-form">
                 <form method="POST" action="">
-                    <div class="field-kiri">
-                        <div class="label"><label for="nama">Nama</label><br></div>
-                        <div class="label"><label for="status">Status</label><br></div>
-                        <div class="label"><label for="pt">PT</label><br></div>
-                        <div class="label"><label for="jurusan">Jurusan</label><br></div>
-                        <div class="label"><label for="email">Email</label><br></div>
-                        <div class="label"><label for="region">Region</label><br></div>
-                        <div class="label"><label for="tahunmasuk">Tahun Masuk</label><br></div>
-                    </div>
-                    <div class="field-kanan">
+                    <div class="field">
                         <input type="text" id="nama" name="nama" value="<?= $hipma->nama; ?>"><br>
                         <input type="text" id="status" name="status" value="<?= $hipma->status; ?>"><br>
                         <input type="text" id="pt" name="pt" value="<?= $hipma->pt; ?>"><br>
